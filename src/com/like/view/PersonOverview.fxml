@@ -6,7 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.like.view.PersonOverviewController">
+<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.like.controller.PersonOverviewController">
    <children>
       <SplitPane dividerPositions="0.29797979797979796" layoutX="33.0" layoutY="36.0" prefHeight="300.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
@@ -46,19 +46,19 @@
                         <Label text="city" GridPane.rowIndex="3" />
                         <Label text="postal code" GridPane.rowIndex="4" />
                         <Label text="birthday" GridPane.rowIndex="5" />
-                        <Label fx:id="firstNamelabel" text="Label" GridPane.columnIndex="1" />
-                        <Label fx:id="lastNamelabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="firstNameLabel" text="Label" GridPane.columnIndex="1" />
+                        <Label fx:id="lastNameLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                         <Label fx:id="streetLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                         <Label fx:id="cityLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                         <Label fx:id="postalCodeLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                         <Label fx:id="birthdayLabel" text="Label" GridPane.columnIndex="1" GridPane.rowIndex="5" />
                      </children>
                   </GridPane>
-                  <HBox layoutX="228.0" layoutY="261.0" prefHeight="23.0" prefWidth="165.0">
+                  <HBox layoutX="193.0" layoutY="261.0" prefHeight="23.0" prefWidth="200.0">
                      <children>
-                        <Button layoutX="228.0" layoutY="261.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="59.0" text="new" />
-                        <Button layoutX="283.0" layoutY="261.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="66.0" text="edit" />
-                        <Button layoutX="338.0" layoutY="261.0" mnemonicParsing="false" text="delete" />
+                        <Button layoutX="228.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleNewPerson" prefHeight="23.0" prefWidth="59.0" text="new" />
+                        <Button layoutX="283.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleEditPerson" prefHeight="23.0" prefWidth="66.0" text="edit" />
+                        <Button layoutX="338.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleDeletePerson" prefHeight="23.0" prefWidth="60.0" text="delete" />
                      </children>
                   </HBox>
                </children>
